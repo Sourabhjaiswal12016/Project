@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main App Container */
+  .app {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f7f9fc;
+  }
+  
+  /* Date Filter Container */
+  .date-filter {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .date-filter button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .date-filter button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sort Toolbar */
+  .sort-toolbar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sort-toolbar button {
+    padding: 8px 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .sort-toolbar button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Follower List */
+  .follower-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Follower Card */
+  .follower-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+  }
+  
+  .follower-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .follower-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .follower-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .follower-card button {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .follower-card button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .follower-card {
+      width: 180px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .date-filter, .sort-toolbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .date-filter button, .sort-toolbar button {
+      width: 100%;
+    }
+  }
+  
